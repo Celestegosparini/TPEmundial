@@ -3,10 +3,7 @@ package testmundialfutbol;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Yaki's
- */
+
 public abstract class EtapaMundial {
 
     private String descripcionEtapa;

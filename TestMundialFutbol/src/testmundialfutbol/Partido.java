@@ -3,10 +3,7 @@ package testmundialfutbol;
 
 import java.util.Date;
 
-/**
- *
- * @author Yaki's
- */
+
 
 public class Partido {
     

@@ -1,10 +1,7 @@
 
 package testmundialfutbol;
 
-/**
- *
- * @author Yaki's
- */
+
 
 public class Resultado {
     

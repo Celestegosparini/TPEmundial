@@ -4,10 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-/**
- *
- * @author Yaki's
- */
+
 public class Equipo {
 
     private String nombre;
