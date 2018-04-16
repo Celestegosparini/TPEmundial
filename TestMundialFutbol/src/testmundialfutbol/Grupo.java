@@ -5,10 +5,11 @@ import java.util.List;
 
 public class Grupo extends EtapaMundial {
 
-    public Grupo(String descripcionEtapa) {
-        super.getDescripcionEtapa();
+    public Grupo() {
+
     }
-        private int punto(Equipo eki) {
+
+    private int punto(Equipo eki) {
         int puntos = 0;
         // recorro los partidosjugados y va comparando los que ganaron y sumado 3 a ganadores y 1 al empate
         for (Partido partidos : eki.getPartidosJugados()) {
@@ -33,10 +34,10 @@ public class Grupo extends EtapaMundial {
             if (punto(tenkai.getLocal()) > punto(tenkai.getVisitante())) {
                 setsu.add(tenkai.getLocal());
             }
-            if (punto(tenkai.getVisitante()) > punto(tenkai.getLocal()))  {
+            if (punto(tenkai.getVisitante()) > punto(tenkai.getLocal())) {
                 setsu.add(tenkai.getVisitante());
             }
-           
+
         }
 
         return setsu;
