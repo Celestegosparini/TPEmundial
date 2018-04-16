@@ -9,6 +9,7 @@ public class Grupo extends EtapaMundial {
 
     private int punto(Equipo eki) {
         int puntos = 0;
+        // recorro los partidosjugados y va compaado los qu ganaron y sumado 3 a ganadpres y 1 al empate
         for (Partido partidos : eki.getPartidosJugados()) {
             if (partidos.getResultado().ganoLocal() && eki.equals(partidos.getLocal())) {
                 puntos += 3;

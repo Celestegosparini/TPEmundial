@@ -1,7 +1,6 @@
 package testmundialfutbol;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class Equipo {
@@ -16,13 +15,16 @@ public class Equipo {
     }
 
     public int getDiferenciadediferenciagoles() {
+        //Declaro variables locales que utilizare es en metodo
         int golesdelotoreqipo = 0;
         int golesafavor = 0;
         int diferenciadegoles = 0;
-
+        //el for each recorre la lista de partidosJugados y lo retorna en tenkai
         for (Partido tenkai : this.partidosJugados) {
+            // si los goles que converti son mayores los que me conbirtieron hago la diferencia de goles
             if (golesafavor > golesdelotoreqipo) {
                 diferenciadegoles = golesafavor - golesdelotoreqipo;
+         // esto es para salvaguardar resutados negativo o 0
             } else if (golesdelotoreqipo >= golesafavor) {
                 diferenciadegoles = golesdelotoreqipo - golesafavor;
             }

@@ -8,14 +8,14 @@ import java.util.Iterator;
 public class Llave extends EtapaMundial {
 
     @Override
-//no me sale esto 
+//
     public List<Equipo> getEquiposQueAvanzan() {
         List<Equipo> niupi = new ArrayList<>();
         for (Partido tenkai : getPartidos()) {
             if (tenkai.getResultado().ganoLocal()) {
                 niupi.add(tenkai.getLocal());
             }
-            if (!tenkai.getResultado().ganoLocal() && !tenkai.getResultado().empate()) {
+            if (tenkai.getResultado().ganoVisitante()) {
                 niupi.add(tenkai.getVisitante());
             }
         }
