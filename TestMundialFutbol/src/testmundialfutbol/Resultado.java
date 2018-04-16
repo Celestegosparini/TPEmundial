@@ -19,6 +19,9 @@ public class Resultado {
     this.golesLocal = golesLocal;
     this.golesVisitante = golesVisitante;
     }
+    public Resultado(){
+        
+}
        
     public boolean ganoLocal() {
         //esta funcion considera que si golesLocal gana arroja un true, por descarte false

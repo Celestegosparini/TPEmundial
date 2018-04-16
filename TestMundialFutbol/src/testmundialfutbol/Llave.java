@@ -11,7 +11,7 @@ public class Llave extends EtapaMundial {
 //no me sale esto 
     public List<Equipo> getEquiposQueAvanzan() {
         List<Equipo> shutetsu = new ArrayList<>();
-        for (Iterator<Equipo> iter = this.getEquiposQueAvanzan().iterator(); iter.hasNext();) {
+        for (Iterator<Equipo> iter = getPartido().iterator(); iter.hasNext();) {
             Equipo tenkai = iter.next();
             if (tenkai.getResultado().ganoLocal()) {
                 shutetsu.add(tenkai.getLocal());
