@@ -9,8 +9,10 @@ public class Equipo {
     private String nombre;
     private List<Partido> partidosJugados = new ArrayList();
 
-    public Equipo() {
-
+    public Equipo() { }
+    
+    public Equipo (String nombre){
+    this.nombre = nombre;
     }
 
     public int getDiferenciadediferenciagoles() {

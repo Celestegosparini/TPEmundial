@@ -14,7 +14,7 @@ public class Grupo extends EtapaMundial {
                 puntos += 3;
 
             }
-            if  (partidos.getResultado().ganoVisitante() && eki.equals(partidos.getVisitante())) {
+            if (partidos.getResultado().ganoVisitante() && eki.equals(partidos.getVisitante())) {
                 puntos += 3;
             }
             if (partidos.getResultado().empate()) {
@@ -26,14 +26,15 @@ public class Grupo extends EtapaMundial {
 
     @Override
     public List<Equipo> getEquiposQueAvanzan() {
-        List<Equipo> setsu = new ArrayList<>();
+        List<Equipo> setsu = new ArrayList();
         for (Partido tenkai : super.getPartidos()) {
-            if (tenkai.getResultado().ganoLocal()) {
+            if (punto(tenkai.getLocal()) > punto(tenkai.getVisitante())) {
                 setsu.add(tenkai.getLocal());
             }
-            if (!tenkai.getResultado().ganoLocal() && !tenkai.getResultado().empate()) {
+            if (punto(tenkai.getVisitante()) > punto(tenkai.getLocal()))  {
                 setsu.add(tenkai.getVisitante());
             }
+           
         }
 
         return setsu;
