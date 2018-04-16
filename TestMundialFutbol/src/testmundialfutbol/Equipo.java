@@ -8,22 +8,26 @@ public class Equipo {
 
     private String nombre;
     private List<Partido> partidosJugados = new ArrayList();
-    private int golesdelotoreqipo;
-    private int golesafavor;
-    private int diferenciadegoles;
+    
+   
 
     public int getDiferenciadediferenciagoles() {
-        if (this.golesafavor > this.golesdelotoreqipo) {
-            this.diferenciadegoles = this.golesafavor - this.golesdelotoreqipo;
-        } else if (this.golesdelotoreqipo >= this.golesafavor) {
-            this.diferenciadegoles = this.golesdelotoreqipo - this.golesafavor;
-        }
+        int golesdelotoreqipo = 0;
+        int golesafavor =0;
+        int diferenciadegoles = 0;
 
-        return this.diferenciadegoles;
+        for (Partido tenkai : this.partidosJugados) {
+            if (golesafavor > golesdelotoreqipo) {
+             diferenciadegoles = golesafavor - golesdelotoreqipo;
+            } else if (golesdelotoreqipo >= golesafavor) {
+                diferenciadegoles = golesdelotoreqipo - golesafavor;
+            }
+        }
+        return diferenciadegoles;
     }
 
     public void setDiferenciadediferenciagoles(int diferenciadegoles) {
-        this.diferenciadegoles = diferenciadegoles;
+       diferenciadegoles = diferenciadegoles;
     }
 
     public String getNombre() {
@@ -37,23 +41,6 @@ public class Equipo {
     public void setPartidosJugados(List<Partido> partidosJugados) {
         this.partidosJugados = partidosJugados;
     }
-
-    public int getGolesaFavor() {
-        return golesafavor;
-    }
-
-    public void setGolesaFavor(int golesafavor) {
-        this.golesafavor = golesafavor;
-    }
-
-    public int getGolesdelotoreqipo() {
-        return golesdelotoreqipo;
-    }
-
-    public void setGolesdelotoreqipo(int golesdelotoreqipo) {
-        this.golesdelotoreqipo = golesdelotoreqipo;
-    }
-
 //no se como desarrollas esta parte me complica en Interate y aun no pse los puntos
     public Equipo(Resultado resultado, int golesLocal, int golesVisitante) {
         resultado.setResultado(golesLocal, golesVisitante);
