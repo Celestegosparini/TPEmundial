@@ -7,6 +7,8 @@ import java.util.Iterator;
 
 public class Llave extends EtapaMundial {
 
+    public Llave(){
+    }
     @Override
 //
     public List<Equipo> getEquiposQueAvanzan() {
