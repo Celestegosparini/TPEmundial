@@ -21,8 +21,8 @@ public class Equipo {
         return this.diferenciadegoles;
     }
 
-    public void setDiferenciadediferenciagoles(int diferenciadediferenciagoles) {
-        this.diferenciadegoles = diferenciadediferenciagoles;
+    public void setDiferenciadediferenciagoles(int diferenciadegoles) {
+        this.diferenciadegoles = diferenciadegoles;
     }
 
     public String getNombre() {
@@ -38,11 +38,11 @@ public class Equipo {
     }
 
     public int getGolesaFavor() {
-        return golesaFavor;
+        return golesafavor;
     }
 
-    public void setGolesaFavor(int golesaFavor) {
-        this.golesaFavor = golesaFavor;
+    public void setGolesaFavor(int golesafavor) {
+        this.golesafavor = golesafavor;
     }
 
     public int getGolesdelotoreqipo() {
