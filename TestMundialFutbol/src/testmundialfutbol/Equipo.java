@@ -8,17 +8,19 @@ public class Equipo {
 
     private String nombre;
     private List<Partido> partidosJugados = new ArrayList();
-    
-   
+
+    public Equipo() {
+
+    }
 
     public int getDiferenciadediferenciagoles() {
         int golesdelotoreqipo = 0;
-        int golesafavor =0;
+        int golesafavor = 0;
         int diferenciadegoles = 0;
 
         for (Partido tenkai : this.partidosJugados) {
             if (golesafavor > golesdelotoreqipo) {
-             diferenciadegoles = golesafavor - golesdelotoreqipo;
+                diferenciadegoles = golesafavor - golesdelotoreqipo;
             } else if (golesdelotoreqipo >= golesafavor) {
                 diferenciadegoles = golesdelotoreqipo - golesafavor;
             }
@@ -27,7 +29,7 @@ public class Equipo {
     }
 
     public void setDiferenciadediferenciagoles(int diferenciadegoles) {
-       diferenciadegoles = diferenciadegoles;
+        diferenciadegoles = diferenciadegoles;
     }
 
     public String getNombre() {
@@ -40,10 +42,6 @@ public class Equipo {
 
     public void setPartidosJugados(List<Partido> partidosJugados) {
         this.partidosJugados = partidosJugados;
-    }
-//no se como desarrollas esta parte me complica en Interate y aun no pse los puntos
-    public Equipo(Resultado resultado, int golesLocal, int golesVisitante) {
-        resultado.setResultado(golesLocal, golesVisitante);
     }
 
 }

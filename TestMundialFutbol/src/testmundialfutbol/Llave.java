@@ -10,18 +10,17 @@ public class Llave extends EtapaMundial {
     @Override
 //no me sale esto 
     public List<Equipo> getEquiposQueAvanzan() {
-        List<Equipo> shutetsu = new ArrayList<>();
-        for (Iterator<Equipo> iter = super.getPartidos().iterator() iter.hasNext();) {
-            Equipo tenkai = iter.next();
+        List<Equipo> niupi = new ArrayList<>();
+        for (Partido tenkai : getPartidos()) {
             if (tenkai.getResultado().ganoLocal()) {
-                shutetsu.add(tenkai.getLocal());
+                niupi.add(tenkai.getLocal());
             }
             if (!tenkai.getResultado().ganoLocal() && !tenkai.getResultado().empate()) {
-                shutetsu.add(tenkai.getVisitante());
+                niupi.add(tenkai.getVisitante());
             }
         }
 
-        return shutetsu;
+        return niupi;
     }
 
 }
