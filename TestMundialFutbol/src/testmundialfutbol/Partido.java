@@ -12,16 +12,15 @@ public class Partido {
     private Equipo visitante;
     private Resultado resultado;
     
-    public Partido(Date fecha, Equipo local, Equipo visitante,int golesLocal, int golesVisitante) {
+    public Partido(Date fecha, Equipo local, Equipo visitante) {
         this.fecha = fecha;
         this.local = local;
         this.visitante = visitante;
-        this.resultado.setResultado(golesLocal, golesVisitante);
+        
     }
     
     public Resultado getResultado() {
-        
-        return this.resultado;
+         return this.resultado;
     }
     
     public Equipo getLocal() {

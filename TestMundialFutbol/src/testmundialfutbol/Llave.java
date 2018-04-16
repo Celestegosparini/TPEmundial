@@ -11,6 +11,7 @@ public class Llave extends EtapaMundial {
 //
     public List<Equipo> getEquiposQueAvanzan() {
         List<Equipo> niupi = new ArrayList<>();
+        // devuelve los equipos que pasan a la de llave
         for (Partido tenkai : getPartidos()) {
             if (tenkai.getResultado().ganoLocal()) {
                 niupi.add(tenkai.getLocal());

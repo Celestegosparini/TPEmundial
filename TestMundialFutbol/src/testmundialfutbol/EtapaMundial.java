@@ -3,14 +3,12 @@ package testmundialfutbol;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public abstract class EtapaMundial {
 
     private String descripcionEtapa;
     private List<Partido> partidos;
 
-    public void EtapaMundial(String descripcionEtapa) {
-        this.descripcionEtapa = descripcionEtapa;
+    public void EtapaMundial() {
         this.partidos = new ArrayList<>();
     }
 

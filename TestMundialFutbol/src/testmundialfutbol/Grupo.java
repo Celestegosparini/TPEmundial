@@ -8,7 +8,7 @@ public class Grupo extends EtapaMundial {
 
     private int punto(Equipo eki) {
         int puntos = 0;
-        // recorro los partidosjugados y va compaado los qu ganaron y sumado 3 a ganadpres y 1 al empate
+        // recorro los partidosjugados y va comparando los que ganaron y sumado 3 a ganadores y 1 al empate
         for (Partido partidos : eki.getPartidosJugados()) {
             if (partidos.getResultado().ganoLocal() && eki.equals(partidos.getLocal())) {
                 puntos += 3;
@@ -26,6 +26,7 @@ public class Grupo extends EtapaMundial {
 
     @Override
     public List<Equipo> getEquiposQueAvanzan() {
+        //recore a lista de partidos y comprar los equipos que avanzan segun su resultado
         List<Equipo> setsu = new ArrayList();
         for (Partido tenkai : super.getPartidos()) {
             if (punto(tenkai.getLocal()) > punto(tenkai.getVisitante())) {

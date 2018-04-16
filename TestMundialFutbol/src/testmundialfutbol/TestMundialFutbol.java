@@ -1,6 +1,6 @@
 package testmundialfutbol;
 
-import java.util.Date;
+
 
 public class TestMundialFutbol {
 
@@ -15,6 +15,7 @@ public class TestMundialFutbol {
         Equipo D = new Equipo();
         D.setNombre("Toho");
        
+      
      
         
         
