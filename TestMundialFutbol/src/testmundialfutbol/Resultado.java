@@ -43,7 +43,13 @@ public class Resultado {
          }
          return false;
     }
-    
+    public boolean ganoVisitante() {
+        //esta funcion considera que si golesviistantes gana arroja un true, por descarte false
+        if (this.golesVisitante > this.golesLocal) {
+            return true;
+        }
+        return false;
+    }
     
     
 }
