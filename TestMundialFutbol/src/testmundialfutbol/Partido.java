@@ -1,6 +1,7 @@
 
 package testmundialfutbol;
 
+import java.util.Calendar;
 import java.util.Date;
 
 
@@ -18,6 +19,10 @@ public class Partido {
         this.visitante = visitante;
         
     }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
     
     public Resultado getResultado() {
          return this.resultado;
@@ -29,6 +34,10 @@ public class Partido {
     
     public Equipo getVisitante() {
         return this.visitante;
+    }
+
+    void setFecha(Calendar calendario) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
