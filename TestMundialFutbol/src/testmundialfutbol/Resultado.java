@@ -8,7 +8,12 @@ public class Resultado {
     private int golesLocal;
     private int golesVisitante;
     
-    public int getGolesLocal() {
+    
+      public Resultado(){
+        
+} 
+  
+      public int getGolesLocal() {
         return this.golesLocal;
     }
     
@@ -19,9 +24,7 @@ public class Resultado {
     this.golesLocal = golesLocal;
     this.golesVisitante = golesVisitante;
     }
-    public Resultado(){
-        
-}
+  
        
     public boolean ganoLocal() {
         //esta funcion considera que si golesLocal gana arroja un true, por descarte false

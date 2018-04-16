@@ -15,9 +15,10 @@ public class Equipo {
     public int getDiferenciadediferenciagoles() {
         if (this.golesafavor > this.golesdelotoreqipo) {
             this.diferenciadegoles = this.golesafavor - this.golesdelotoreqipo;
-        } else {
+        } else if (this.golesdelotoreqipo >= this.golesafavor) {
             this.diferenciadegoles = this.golesdelotoreqipo - this.golesafavor;
         }
+
         return this.diferenciadegoles;
     }
 
