@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Grupo extends EtapaMundial {
 
-    List<Equipo> ekipoquepaso = new ArrayList();
 
     private int punto(Equipo eki) {
         int puntos = 0;

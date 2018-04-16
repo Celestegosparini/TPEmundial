@@ -48,4 +48,8 @@ public class Equipo {
         this.partidosJugados = partidosJugados;
     }
 
+    void setNombre(String string) {
+       this.nombre = nombre;
+    }
+
 }
