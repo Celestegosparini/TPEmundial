@@ -8,6 +8,7 @@ public class Grupo extends EtapaMundial {
     public Grupo() {
 
     }
+     
 
     private int punto(Equipo eki) {
         int puntos = 0;

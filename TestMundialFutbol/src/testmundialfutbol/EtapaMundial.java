@@ -12,6 +12,14 @@ public abstract class EtapaMundial {
         this.partidos = new ArrayList<>();
     }
 
+    public void setDescripcionEtapa(String descripcionEtapa) {
+        this.descripcionEtapa = descripcionEtapa;
+    }
+
+    public void setPartidos(List<Partido> partidos) {
+        this.partidos = partidos;
+    }
+
     public String getDescripcionEtapa() {
         return this.descripcionEtapa;
     }
