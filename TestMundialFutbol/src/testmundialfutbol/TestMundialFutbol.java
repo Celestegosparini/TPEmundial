@@ -18,14 +18,16 @@ public class TestMundialFutbol {
         System.out.println(Dvisititante.getNombre());
 
 //   creo  PARTIDOs y asigno resultados 
-        Partido priPar = new Partido(new Date(2, 4, 18), ALocal, BVisitante);
+        Partido priPar = new Partido(new Date(), ALocal, BVisitante);
+        Partido dosPar = new Partido(new Date(), CLocal, Dvisititante);
+        
+        System.out.println(priPar);
         Resultado priParResu = new Resultado();
         priParResu.setResultado(3, 2);
-        priPar.setResultado(priParResu);    
-        Partido dosPar = new Partido(new Date(3, 4, 18), CLocal, Dvisititante);
+        priPar.setResultado(priParResu);  
         Resultado dosParResu = new Resultado();
         dosParResu.setResultado(4, 5);
-        
+        dosPar.setResultado(dosParResu);
       
     }
 
