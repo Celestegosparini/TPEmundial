@@ -17,7 +17,7 @@ public class TestMundialFutbol {
         Equipo Dvisititante = new Equipo("Toho");
         System.out.println(Dvisititante.getNombre());
 
-//   creo  PARTIDOs y adigno resultados 
+//   creo  PARTIDOs y asigno resultados 
         Partido priPar = new Partido(new Date(2, 4, 18), ALocal, BVisitante);
         Resultado priParResu = new Resultado();
         priParResu.setResultado(3, 2);
@@ -25,7 +25,8 @@ public class TestMundialFutbol {
         Partido dosPar = new Partido(new Date(3, 4, 18), CLocal, Dvisititante);
         Resultado dosParResu = new Resultado();
         dosParResu.setResultado(4, 5);
-        dosPar.setResultado(dosParResu);   
+        
+      
     }
 
 }

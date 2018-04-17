@@ -23,11 +23,9 @@ public class Resultado {
     }
 
     public boolean ganoLocal() {
-        //esta funcion considera que si golesLocal gana arroja un true, por descarte false
-        if (this.golesLocal > this.golesVisitante) {
-            return true;
-        }
-        return false;
+        // retorn el cuando gana local
+        
+        return this.golesLocal > this.golesVisitante;
     }
 
     public void setGolesLocal(int golesLocal) {
@@ -39,19 +37,16 @@ public class Resultado {
     }
 
     public boolean empate() {
-        //esta funcion considera que si empataron arroja un true, por descarte false
-        if (this.golesLocal == this.golesVisitante) {
-            return true;
-        }
-        return false;
+        //retorna cuando gana visitante
+        
+        return this.golesLocal == this.golesVisitante;
+        
     }
 
     public boolean ganoVisitante() {
-        //esta funcion considera que si golesviistantes gana arroja un true, por descarte false
-        if (this.golesVisitante > this.golesLocal) {
-            return true;
-        }
-        return false;
+        //define empate
+        
+        return this.golesVisitante > this.golesLocal;
     }
 
 }

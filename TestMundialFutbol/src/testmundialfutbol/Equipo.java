@@ -37,7 +37,7 @@ public class Equipo {
     }
 
     public void setDiferenciadediferenciagoles(int diferenciadegoles) {
-        diferenciadegoles = diferenciadegoles;
+       diferenciadegoles = diferenciadegoles;
     }
 
     public String getNombre() {
