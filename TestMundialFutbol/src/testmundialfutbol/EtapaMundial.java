@@ -6,9 +6,10 @@ import java.util.List;
 public abstract class EtapaMundial {
 
     private String descripcionEtapa;
-    private List<Partido> partidos;
+    List<Partido> partidos;
 
     public void EtapaMundial() {
+        this.descripcionEtapa = "";
         this.partidos = new ArrayList<>();
     }
 

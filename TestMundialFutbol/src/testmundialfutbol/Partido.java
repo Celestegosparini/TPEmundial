@@ -10,7 +10,7 @@ public class Partido {
     private Resultado resultado;
 
     public Partido(Equipo local, Equipo visitante) {
-         this.local = local;
+        this.local = local;
         this.visitante = visitante;
 
     }
@@ -20,6 +20,22 @@ public class Partido {
         this.local = local;
         this.visitante = visitante;
 
+    }
+
+    public void setLocal(Equipo local) {
+        this.local = local;
+    }
+
+    public void setVisitante(Equipo visitante) {
+        this.visitante = visitante;
+    }
+
+    public void setResultado(Resultado resultado) {
+        this.resultado = resultado;
+    }
+
+    public Date getFecha() {
+        return fecha;
     }
 
     public void setFecha(Date fecha) {
@@ -37,7 +53,5 @@ public class Partido {
     public Equipo getVisitante() {
         return this.visitante;
     }
-
-  
 
 }

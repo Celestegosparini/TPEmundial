@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;
 
-
 public class Llave extends EtapaMundial {
 
-    public Llave(){
+    public Llave() {
     }
+
     @Override
 //
     public List<Equipo> getEquiposQueAvanzan() {

@@ -8,18 +8,19 @@ public class TestMundialFutbol {
 
     public static void main(String[] args) {
 // seteo nombre de equipo
-        Equipo A = new Equipo();
-        A.setNombre("Niupi");
-        Equipo B = new Equipo();
-        B.setNombre("Shutetsu");
-        Equipo C = new Equipo();
-        C.setNombre("Furano");
-        Equipo D = new Equipo();
-        D.setNombre("Toho");
+        Equipo ALocal= new Equipo("Niupi");
+      
+        Equipo BVisitante = new Equipo("Shutetsu");
+    
+        Equipo CLocal = new Equipo("Furano");
+     
+        Equipo Dvisititante = new Equipo("Toho");
        
-//        creo el primer PARTIDO 
-        Partido priPar = new Partido(new Date (),A,B);
-        Partido dosPar = new Partido(new Date(), C, D);
+//   creo  PARTIDO 
+        Partido priPar = new Partido(new Date(2,4,18),ALocal,BVisitante);
+        
+        
+        Partido dosPar = new Partido(new Date(3,4,18), CLocal, Dvisititante);
         
         
         

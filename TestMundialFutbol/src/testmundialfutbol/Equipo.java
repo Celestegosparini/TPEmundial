@@ -6,12 +6,16 @@ import java.util.List;
 public class Equipo {
 
     private String nombre;
-    private List<Partido> partidosJugados = new ArrayList();
+    private List<Partido> partidosJugados;
 
-    public Equipo() { }
+    public Equipo() { 
+        this.nombre = "";
+        this.partidosJugados = new ArrayList();
+    }
     
     public Equipo (String nombre){
     this.nombre = nombre;
+     this. partidosJugados = new ArrayList();
     }
 
     public int getDiferenciadediferenciagoles() {
@@ -51,5 +55,11 @@ public class Equipo {
     void setNombre(String string) {
        this.nombre = nombre;
     }
+
+    
+
+   
+
+    
 
 }
