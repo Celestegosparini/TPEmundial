@@ -55,7 +55,10 @@ public class Equipo {
     void setNombre(String string) {
        this.nombre = nombre;
     }
-
+@Override
+    public String toString() {
+        return nombre;
+    }
     
 
    

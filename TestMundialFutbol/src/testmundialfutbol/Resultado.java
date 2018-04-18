@@ -24,7 +24,7 @@ public class Resultado {
 
     public boolean ganoLocal() {
         // retorn el cuando gana local
-        
+         System.out.println("Gano local");
         return this.golesLocal > this.golesVisitante;
     }
 
@@ -38,15 +38,20 @@ public class Resultado {
 
     public boolean empate() {
         //retorna cuando gana visitante
-        
+        System.out.println("Empate");
         return this.golesLocal == this.golesVisitante;
         
     }
 
     public boolean ganoVisitante() {
         //define empate
-        
+         System.out.println("Gano viitante");
         return this.golesVisitante > this.golesLocal;
     }
-
+     @Override
+    public String toString() {
+        String golesLocales = String.valueOf(golesLocal);
+        String golesVisitantes = String.valueOf(golesVisitante);
+        return "Puntos: " + golesLocales + "-" + golesVisitantes;
+    }
 }

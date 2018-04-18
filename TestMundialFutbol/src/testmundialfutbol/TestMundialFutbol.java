@@ -22,13 +22,18 @@ public class TestMundialFutbol {
         Partido dosPar = new Partido(new Date(), CLocal, Dvisititante);
         
         System.out.println(priPar);
+        
         Resultado priParResu = new Resultado();
         priParResu.setResultado(3, 2);
         priPar.setResultado(priParResu);  
+        System.out.println(priParResu);
+        
+        System.out.println(dosPar);
         Resultado dosParResu = new Resultado();
         dosParResu.setResultado(4, 5);
         dosPar.setResultado(dosParResu);
-      
+        System.out.println(dosParResu);
+        
     }
 
 }

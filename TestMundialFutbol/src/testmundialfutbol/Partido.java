@@ -53,5 +53,9 @@ public class Partido {
     public Equipo getVisitante() {
         return this.visitante;
     }
+     @Override
+    public String toString() {
+        return ""+ this.fecha + "  " + this.local + " vs " + this.visitante;
+    }
 
 }
